@@ -1,0 +1,48 @@
+:root {
+  --bg-dark: #121212;
+  --bg-card: #1e1e1e;
+  --text-light: #fff;
+  --text-muted: #aaa;
+  --accent: #e50914;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media(min-width: 1024px){
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media(min-width: 768px) and (max-width:1023px){
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media(max-width:767px){
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+}
+
