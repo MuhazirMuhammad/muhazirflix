@@ -1,0 +1,4 @@
+npx create-next-app@latest muhazirflix --typescript
+cd muhazirflix
+npm install axios react-icons framer-motion lodash.debounce
+npm run dev
